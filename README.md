@@ -1,9 +1,14 @@
 # Multivariate-Methods
 
-Final SAS project in Multivariate Statistics, STA-6707 Spring 2025.
-To view the project, go to the main portfolio page in the contact section.
+Final SAS project in Multivariate Statistics, STA-6707 Spring 2025.  
 
-Contact:
-Murpys D. Mendez
-murpys@gmail.com
-[Portfolio](https://duranmendez.github.io/Data-Science-Portfolio/)
+To view all projects, please visit the main portfolio page in the **Contact** section below.
+
+---
+
+## 📫 Contact
+
+**Murpys D. Mendez**  
+murpys@gmail.com  
+
+[Portfolio Website](https://duranmendez.github.io/Data-Science-Portfolio/)
