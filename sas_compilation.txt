@@ -1,0 +1,67 @@
+Program 1 (02.05):
+
+data;
+input x @@ ;
+datalines;
+­1 ­.1 .16 .41 .62 .8 1.26 1.54 1.71 2.3
+;
+ods html close;
+ods html;
+proc univariate normal plot ; var x ; run;
+data;
+input x @@ ;
+datalines;
+­1 ­.1 .16 .41 .62 .8 1.26 1.54 1.71 2.3
+;
+ods html close;
+ods html;
+proc univariate normal plot ; var x ; run;
+proc rank normal=blom out=normals;
+var x; ranks q;
+data normals; set normals;
+proc plot; plot x*q; run;
+proc corr; var x q ; run;
+
+
+
+
+Pogram 2 (02.10)
+
+data my_data;
+input x y;
+datalines;
+7 1
+7 1
+8 1
+3 2
+2 2
+4 2
+4 2
+6 2
+6 2
+7 3
+5 3
+3 3
+3 6
+5 7
+8 8
+;
+ods html close;
+ods html;
+run;
+/*view dataset*/
+proc print data=my_data;
+/*Suppose we use PROC REG to fit a simple linear regression model to this dataset, using x as the predictor variable
+and y as the response variable.*/
+/*fit simple linear regression model*/
+proc reg data=my_data;
+model y = x;
+run;
+/*perform box­cox transformation*/
+proc transreg data=my_data;
+model boxcox(y) = identity(x);
+run;
+
+
+
+Program 3()
