@@ -1,0 +1,19 @@
+*multivariate normality;
+proc princomp data=six_states std out=pcresult;
+   var totalhomeless eviction_filings;
+run;
+data mahal;
+   set pcresult;
+   dist2 = uss(of prin1-prin2);
+run;
+proc sort data=mahal;
+   by dist2;
+run;
+data plotdata;
+   set mahal;
+   prb = (_n_ - 0.5) / 50;  /* Calculate probability */
+   chiquant = cinv(prb, 2);  /* Chi-square quantiles for 2 degrees of freedom (2 components) */
+run;
+proc gplot data=plotdata;
+   plot dist2*chiquant;
+run;
