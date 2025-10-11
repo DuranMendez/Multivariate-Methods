@@ -1,14 +1,17 @@
-# Multivariate-Methods
+## Relationships among homelesness factors  
 
-Final SAS project in Multivariate Statistics, STA-6707 Spring 2025.  
+In this project, we apply descriptive statistics, correlation analysis, Principal Components Analysis (PCA), and Factor Analysis to explore patterns and underlying connections in the data. This allows us to demonstrate the use of multivariate statistical techniques while examining the relationships among homelessness, evictions, and related socioeconomic factors.
 
-To view all projects, please visit the main portfolio page in the **Contact** section below.
 
 ---
 
-## 📫 Contact
+**Tasks Performed**  
+- descriptive statistics
+- normality tests
+- transformations
+- Principal Components Analysis
+- Factor Analysis
 
-**Murpys D. Mendez**  
-murpys@gmail.com  
+---  
 
-[Portfolio Website](https://duranmendez.github.io/Data-Science-Portfolio/)
+[View Full Report](https://duranmendez.github.io/homelessness-factors/SAS_Project.pdf)
